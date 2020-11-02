@@ -1,21 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
-
-div {
-
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 div > h2 {
     margin-bottom: 50px;
     margin-left: 0px;
-
-}
-
-div > p1 {
 }
 
 img {
@@ -26,18 +21,14 @@ img {
 }
 
 div > img {
-
     padding-bottom: 50px;
     margin: -200px 0 0 350px;
-
 }
-
 
 .logo {
     float: left;
-    font-size: 3.2vw;
-    margin: -50px 50px 0 250px;
-
+    font-size: 2.5vw;
+    margin: -45px 50px 0 100px;
 }
 
 .center {
@@ -47,29 +38,24 @@ div > img {
     border-style: solid;
     width: 650px;
     background-color: #6a9dff;
-
 }
-
 
 .nav {
     background-color: #6a9dff;
     list-style: none;
     text-align: right;
-    padding: 20px 0 20px 0;
     margin: 0;
-
 }
 
 .nav > li {
     display: inline-block;
     font-size: 2vw;
-    padding: 60px 50px 60px 50px;
+    padding: 30px 30px 40px 40px;
 }
 
 .nav > li > a {
     text-decoration: none;
     color: black;
-
 }
 
 .nav > li > a:hover {
@@ -80,4 +66,77 @@ div > img {
     background-color: #6a9dff;
     text-align: center;
     padding: 20px;
+}
+
+@media only screen and (max-width: 1100px){
+    .nav {
+        padding: -10px -10px -10px -10px;
+}
+
+    .nav > li {
+        display: inline-block;
+        font-size: 2vw;
+        padding: 30px 25px 30px 25px;
+    }
+
+    .logo {
+        float: left;
+        font-size: 2vw;
+        margin: -10px 100px 0 50px;
+    }
+
+    .center {
+        margin: 25px 25px 0 130px;
+        padding: 20px;
+        justify-content: center;
+        border-style: solid;
+        width: 650px;
+        background-color: #6a9dff;
+}
+
+    img {
+        position: relative;
+        max-height: 100%;
+        width: 30%;
+        height: auto;
+    }
+
+    div > img {
+        padding-bottom: 25px;
+        margin: -150px 0 0 150px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .nav {
+        margin: -50px;
+        padding: -20px;
+    }
+
+    .logo {
+        float: left;
+        font-size: 2vw;
+        margin: 50px 50px 0 50px;
+    }
+
+    .center {
+        margin: 25px 25px 0 130px;
+        padding: 20px;
+        justify-content: center;
+        border-style: solid;
+        width: 650px;
+        background-color: #6a9dff;
+    }
+
+    img {
+        position: relative;
+        max-height: 100%;
+        width: 30%;
+        height: auto;
+    }
+
+    div > img {
+        padding-bottom: 25px;
+        margin: -150px 0 0 150px;
+    }
 }
