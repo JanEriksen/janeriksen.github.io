@@ -1,0 +1,45 @@
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav {
+    list-style: inside;
+    margin-top: 50px;
+}
+
+.nav > li {
+    font-size: 2vw;
+    padding: 5px 0px 5px 75px;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav > li > a:hover {
+    color: #0400ff;
+}
+
+.center {
+    margin: 100px 100px 0 400px;
+    padding: 40px;
+    border-style: hidden;
+    width: 600px;
+    background-color: #ffffff;
+}
+
+.background {
+    background-image: linear-gradient(to top, rgba(0,0,102,1), rgba(0,102,255,1), rgba(0,0,102,0));
+}
+
+.footer {
+    background-color: rgba(0, 0, 51, 1);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
