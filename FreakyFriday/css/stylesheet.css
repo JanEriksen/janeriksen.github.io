@@ -8,6 +8,10 @@ html {
     font-family: sans-serif;
 }
 
+ul {
+    margin: 0;
+}
+
 div > h2 {
     margin-bottom: 50px;
     margin-left: 0px;
@@ -25,6 +29,35 @@ div > img {
     margin: -200px 0 0 350px;
 }
 
+nav {
+    background-color: #6a9dff;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 2vw;
+    padding: 30px 30px 40px 40px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    color: #c1c1c1;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logo {
     float: left;
     font-size: 2.5vw;
@@ -32,34 +65,10 @@ div > img {
 }
 
 .center {
-    margin: 25px 25px 0 400px;
-    padding: 40px;
-    justify-content: center;
     border-style: solid;
     width: 650px;
     background-color: #6a9dff;
-}
-
-.nav {
-    background-color: #6a9dff;
-    list-style: none;
-    text-align: right;
-    margin: 0;
-}
-
-.nav > li {
-    display: inline-block;
-    font-size: 2vw;
-    padding: 30px 30px 40px 40px;
-}
-
-.nav > li > a {
-    text-decoration: none;
-    color: black;
-}
-
-.nav > li > a:hover {
-    color: #c1c1c1;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -69,11 +78,11 @@ div > img {
 }
 
 @media only screen and (max-width: 1100px){
-    .nav {
+    nav {
         padding: -10px -10px -10px -10px;
 }
 
-    .nav > li {
+    nav > li {
         display: inline-block;
         font-size: 2vw;
         padding: 30px 25px 30px 25px;
@@ -108,7 +117,7 @@ div > img {
 }
 
 @media only screen and (max-width: 700px){
-    .nav {
+    nav {
         margin: -50px;
         padding: -20px;
     }
