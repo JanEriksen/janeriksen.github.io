@@ -1,39 +1,22 @@
-body {
+/* Fjerner browserdefinerte regler for margin og padding */
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
     font-family: sans-serif;
-}
-
-ul {
-    margin: 0;
-}
-
-div > h2 {
-    margin-bottom: 50px;
-    margin-left: 0px;
-}
-
-img {
-    position: relative;
-    max-height: 100%;
-    width: 40%;
-    height: 35%;
-}
-
-div > img {
-    padding-bottom: 50px;
-    margin: -200px 0 0 350px;
+    scroll-behavior: smooth;
 }
 
 nav {
+    height: 10%;
+    width: 100%;
+    position: fixed;
     background-color: #6a9dff;
     list-style: none;
     text-align: right;
-    margin: 0;
+    z-index: 1;
 }
 
 nav > ul > li {
@@ -51,7 +34,35 @@ nav > ul > li > a:hover {
     color: #c1c1c1;
 }
 
+section > h2 {
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+section > p {
+    padding-left: 20px;
+    line-height: 2em;
+}
+
+section > img {
+    position: relative;
+    float: right;
+    bottom: 200px;
+    right: 50px;
+    max-height: 100%;
+    width: 40%;
+    height: 200px;
+}
+
+.logo {
+    position: relative;
+    top: 55px;
+}
+
 .flex {
+    padding-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,10 +75,12 @@ nav > ul > li > a:hover {
     margin: -45px 50px 0 100px;
 }
 
-.center {
+/* Styliserer seksjonene i html */
+.flexItems {
     border-style: solid;
     width: 650px;
     background-color: #6a9dff;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -75,6 +88,15 @@ nav > ul > li > a:hover {
     background-color: #6a9dff;
     text-align: center;
     padding: 20px;
+}
+
+/* Overskriver margin i .flexitems klassen */
+#clothing {
+    margin-top: 60px;
+}
+
+#accessories {
+    margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 1100px){
