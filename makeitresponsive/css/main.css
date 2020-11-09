@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    background-color: darkgoldenrod;
+    list-style: none;
+    text-align: right;
+    z-index: 1;
+}
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 18px;
+    padding-top: 2%;
+    padding-right: 50px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    color: #ffffff;
+}
+
+
+.logo {
+    float: left;
+    font-size: 32px;
+    padding-top: 1%;
+    padding-left: 10%;
+}
+
+.flex {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.flexitems {
+    width: 100%;
+    border-style: none;
+    background-color: slategray;
+    text-decoration: none;
+    color: black;
+    font-size: 300%;
+    margin-left: 8cm;
+    margin-right: 8cm;
+    margin-bottom: 10px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#company {
+    margin-right: 2cm;
+}
+
+#schedule {
+    margin-left: 2cm;
+}
+
+#staff {
+    margin-right: 2cm;
+    margin-bottom: 10%;
+}
+
+#contact {
+    margin-left: 2cm;
+    margin-bottom: 10%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: darkseagreen;
+    margin-top: auto;
+    padding: 25px 0 25px 0;
+}
+
+
+/* Phone */
+@media screen and (max-width:320px) {
+    body {
+        background-color: springgreen;
+    }
+}
+
+
+
+
+
+/* Tablet */
+@media screen and (min-width:321px) and (max-width:768px){
+    body {
+        background-color: tomato;
+    }
+}
+
+
+
+
+
+/* Desktop */
+@media screen and (min-width:769px){
+    body {
+        background-color: wheat;
+    }
+}
