@@ -10,21 +10,6 @@ body {
   background-size: cover;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-h3 {
-  margin-top: 40px;
-  margin-left: 30px;
-  color: #59981a;
-  font-size: 24px;
-}
-
 li a {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -34,29 +19,9 @@ li a {
 
 button {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
-  padding: 9px 25px;
-  background-color: rgba(89, 152, 26, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: large;
-}
-
-.login {
-  font-size: 16px;
-}
-
-.adopt {
-  position: relative;
-  left: 40%;
-  font-size: 30px;
-}
-
-.end {
-  margin-bottom: 50px;
 }
 
 header {
@@ -81,10 +46,39 @@ header {
 
 .nav-links li a:hover {
   color: #59981a;
+  font-size: 22px;
 }
 
-button:hover {
-  background-color: rgba(89, 152, 26, 0.8);
+.login-btn {
+  outline: none;
+  padding: 9px 25px;
+  background-color: rgba(89, 152, 26, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.login-btn:hover {
+  background-color: #ecf87f;
+  color: #000;
+}
+
+.adopt-main-btn {
+  outline: none;
+  padding: 9px 25px;
+  background-color: rgba(89, 152, 26, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 40px;
+  margin-left: 30%;
+}
+
+.adopt-main-btn:hover {
+  background-color: #ecf87f;
+  color: #000;
 }
 
 .wrapper {
@@ -93,17 +87,24 @@ button:hover {
 
 .img-info {
   width: 100%;
-  margin-bottom: 150px;
+}
+
+.img-info h1 {
+  padding: 30px 30px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: #59981a;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .img-info h2 {
   padding: 30px 30px 20px;
-  margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #59981a;
-  line-height: 44px;
-  text-align: center;
+  line-height: 26px;
 }
 
 .img-info p {
@@ -112,6 +113,26 @@ button:hover {
   font-size: 20px;
   color: #111;
   line-height: 26px;
+}
+
+.img-info2 h2 {
+  padding: 30px 30px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #59981a;
+  line-height: 26px;
+}
+
+.img-info2 p {
+  padding: 0px 30px 20px;
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  color: #111;
+  line-height: 26px;
+}
+
+.mobileapp {
+  width: 100%;
 }
 
 .footer {
@@ -127,18 +148,24 @@ button:hover {
   height: 30px;
 }
 
+
+
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 600px;
     margin: 0 auto;
   }
 
-  .img-info h2 {
+  .img-info h1 {
     padding: 20px 0px 0px;
   }
 
   .img-info p {
     padding: 20px 0px 0px;
+  }
+
+  .mobileapp {
+    width: 100%;
   }
 }
 
@@ -147,16 +174,30 @@ button:hover {
     width: 1000px;
   }
 
-  .img-info {
-    width: 100%;
+  .img-info2 {
+    width: 50%;
     float: left;
   }
 
-  .img-info h2 {
+  .img-info h1 {
     padding: 20px 0px 0px 30px;
   }
 
   .img-info p {
     padding: 20px 0px 0px 30px;
+  }
+
+  .mobileapp {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .adopt-main-btn {
+    margin: 10% 15%;
+  }
+
+  #space {
+    margin-bottom: 40px;
   }
 }

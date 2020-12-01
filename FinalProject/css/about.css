@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+      margin-left: 30px;
+      font-family: "Montserrat", sans-serif;
+      color: #59981a;
+  }
+  
+  li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  button {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(89, 152, 26, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+  }
+  
+
+  
+  .adopt {
+    position: relative;
+    left: 40%;
+    font-size: 30px;
+  }
+  
+  .end {
+    margin-bottom: 50px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav-links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+    color: #59981a;
+    font-size: 22px;
+  }
+  
+  button:hover {
+    color: #000;
+    background-color: #ecf87f;
+  }
+  
+  .wrapper {
+    width: 100%;
+  }
+  
+  .info {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  
+  .info h1 {
+    padding: 30px 30px 20px;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    color: #59981a;
+    line-height: 44px;
+    text-align: center;
+  }
+  
+  .info p {
+    padding: 0px 30px 20px;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    color: #111;
+    line-height: 26px;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #59981a;
+    color: white;
+    text-align: center;
+    font-family: Helvetica Neue;
+    height: 30px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+  
+    .wrapper {
+      width: 600px;
+      margin: 0 auto;
+    }
+  
+    .info h2 {
+      padding: 20px 0px 0px;
+    }
+  
+    .info p {
+      padding: 20px 0px 0px;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+  
+    .wrapper {
+      width: 1000px;
+    }
+  
+    .info {
+      width: 100%;
+      float: left;
+    }
+  
+    .info h1p {
+      padding: 20px 0px 0px 30px;
+    }
+  
+    .info p {
+      padding: 20px 0px 0px 30px;
+    }
+  }
+  

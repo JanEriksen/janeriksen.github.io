@@ -27,7 +27,7 @@ li a {
 
 button {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
 }
@@ -54,9 +54,11 @@ header {
 
 .nav-links li a:hover {
   color: #59981a;
+  font-size: 22px;
 }
 
 button {
+  outline: none;
   padding: 9px 25px;
   background-color: rgba(89, 152, 26, 1);
   border: none;
@@ -66,7 +68,8 @@ button {
 }
 
 button:hover {
-  background-color: rgba(89, 152, 26, 0.8);
+  background-color: #ecf87f;
+  color: #000;
 }
 
 .contact {
