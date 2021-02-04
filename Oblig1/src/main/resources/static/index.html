@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestill kinobiletter</title>
+    <script src="kinobillett.js"></script>
+
+</head>
+<body>
+
+<h1>Bestilling av kinobiletter</h1>
+
+Velg film: <select id="filmer">
+    <option>Haisommer</option>
+    <option>IT</option>
+    <option>Inception</option>
+    <option>Star Wars III</option>
+    <option>Matrix</option>
+    <option>Ringenes Herre</option>
+    <option>The Dark Knight</option>
+    <option>Pulp Fiction</option>
+</select>
+<br><br>
+
+Antall: <input type="text" id="antall">
+<span id="errorAntall" style="color: red;"></span><br><br>
+
+<table>
+    <tr>
+        <td>Fornavn:</td><td><input type="text" id="fornavn">
+        <span id="errorFornavn" style="color: red;"></span></td>
+    </tr>
+    <tr>
+        <td>Etternavn:</td><td><input type="text" id="etternavn">
+        <span id="errorEtternavn" style="color: red;"></span></td>
+    </tr>
+    <tr>
+        <td>Telefonnr:</td><td><input type="text" id="telefonnr">
+        <span id="errorTelefonnr" style="color: red;"></span></td>
+    </tr>
+    <tr>
+        <td>Epost:</td><td><input type="text" id="epost">
+        <span id="errorEpost" style="color: red;"></span></td>
+    </tr>
+</table>
+
+<button id="kjøpBilett" onclick="kjopBilett()">Kjøp bilett</button>
+
+<h2>Alle biletter</h2>
+
+<div id="kjopteBiletter"></div>
+
+<button id="slettBiletter">Slett bilett(er)</button>
+
+</body>
+</html>
